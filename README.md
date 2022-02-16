@@ -101,7 +101,7 @@ Si es la primera vez que vas correr el script, deberás configurar la url, que e
 
 Para ello ingresa a la página de registro de trabajo y abre las ***dev tools*** y ve a la pestaña de network o red. Si no tienes un segundo monitor, para este caso es probable que te sea más cómodo dejar las ***dev tools*** en el lateral o en la parte inferior del navegador.  Recuerda que puedes configurar esto presionando los tres puntos del lateral superior derecho.
 
-![devtools-position-config.JPG](public/img/devtools-position-config.jpg)
+![devtools-position-configuration.jpg](public/img/devtools-position-configuration.jpg)
 
 Es importante que abras la pestaña network antes de continuar. Esto le indicará al navegador que debe registrar las peticiones que se ejecuten hacía cualquier destino.  Ahora deberás crear un registro de trabajo. Cuando presiones el botón Guardar, se emitiría una request a un servidor de atlassian, y el destino de esta será la url que necesitamos.
 
@@ -112,7 +112,7 @@ Es importante que abras la pestaña network antes de continuar. Esto le indicar�
 
 La url se encuentra en la pestaña **Headers** y es la **Request URL**. Cópiala y pégala en el snippet.
 
-![url.JPG](public/img/url.jpg)
+![request-url.jpg](public/img/request-url.jpg)
 
 ### ¡A registrar el trabajo!
 
