@@ -10,11 +10,11 @@ Este script se debe correr desde la página de registros de trabajo de Jira.
 
 La manera más eficiente de utilizar el script es creando un snippet, que es un archivo que contiene una secuencia de instrucciones JS que se puede ejecutar cuantas veces sea necesario. Para ello, debes acceder a las herramientas de desarrollo de tu navegador, o ***dev tools***. Usando la combinación de teclas `Crtl + Shift + I` o pulsando `clic derecho + inspeccionar` se abrirá una ventana en el lateral izquierdo. En lo personal me gusta que las herramientas de desarrollo estén en una ventana aparte para poder trabajar mejor.
 
-![first-step.gif](public/img/first-step.gif)
+![first-step.gif](docs/img/first-step.gif)
 
 Para desplegar la consola inferior que se ve en el gif anterior puedes presionar la tecla `Esc`. Ahora es momento de crear el snippet. Los snippets se almacenarán en tu ordenador, por lo que podrás ejecutarlos cuantas veces sean necesarios. Para ello debes ir al panel de snippets y crear uno nuevo.
 
-![second-step.gif](public/img/second-step.gif)
+![second-step.gif](docs/img/second-step.gif)
 
 Si es tu primer snippet, solo te debería salir el que acabas de crear. Ahora debes agregar el siguiente código. 
 
@@ -101,18 +101,18 @@ Si es la primera vez que vas correr el script, deberás configurar la url, que e
 
 Para ello ingresa a la página de registro de trabajo y abre las ***dev tools*** y ve a la pestaña de network o red. Si no tienes un segundo monitor, para este caso es probable que te sea más cómodo dejar las ***dev tools*** en el lateral o en la parte inferior del navegador.  Recuerda que puedes configurar esto presionando los tres puntos del lateral superior derecho.
 
-![devtools-position-configuration.jpg](public/img/devtools-position-configuration.jpg)
+![devtools-position-configuration.jpg](docs/img/devtools-position-configuration.jpg)
 
 Es importante que abras la pestaña network antes de continuar. Esto le indicará al navegador que debe registrar las peticiones que se ejecuten hacía cualquier destino.  Ahora deberás crear un registro de trabajo. Cuando presiones el botón Guardar, se emitiría una request a un servidor de atlassian, y el destino de esta será la url que necesitamos.
 
 > Tip: para que no tengas que buscar en medio de muchas request, usa el filtro Fetch/XHR y elimina el registro de las request existentes con el 🚫 tal y como se muestra a continuación.
 > 
 
-![third-step.gif](public/img/third-step.gif)
+![third-step.gif](docs/img/third-step.gif)
 
 La url se encuentra en la pestaña **Headers** y es la **Request URL**. Cópiala y pégala en el snippet.
 
-![request-url.jpg](public/img/request-url.jpg)
+![request-url.jpg](docs/img/request-url.jpg)
 
 ### ¡A registrar el trabajo!
 
@@ -122,7 +122,7 @@ Luego de abrir la página en donde registras el trabajo normalmente, abrir las *
 
 Como yo ya hice los registros del mes y no quiero tener que eliminar varios registros, pasaré como segundo parámetro el valor equivalente al último, pero tú no deberías hacer esto. Si quieres entender qué significa cada parámetro puedes revisar en “Parámetros”, al inicio de la documentación.
 
-![four-step.gif](public/img/four-step.gif)
+![four-step.gif](docs/img/four-step.gif)
 
 En lugar del último undefined que se ve en el gif, te saldrá la respuesta del servicio de atlassian que incluye la data del autor, el comentario, la fecha de creación, entre otra data que indica que todo ha salido correctamente.  
 
